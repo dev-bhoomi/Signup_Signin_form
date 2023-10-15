@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+}
+.wrapper{
+    width:100vw;
+    height:100vh;
+    background-color: rgba(95,95,95,0.39);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .modalForm{
+        width:400px;
+        min-height: 80vh;
+        background-color: #fff;
+        border-radius:10px;
+        box-shadow:rgba(0,0,0,0.15) opx 2px 8px;
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+    }
+    .actionBtns{
+        width:80%;
+        background-color: royalblue;
+        margin:2em;
+        justify-content:space-between;
+        display:flex;
+        position:relative;
+        border-radius:50px;
+        }
+        .actionBtn{
+            padding:1em;
+            width:50%;
+            outline:none;
+            border:none;
+            background-color:transparent;
+            border-radius:50px;
+            color:#fff;
+            font-size: 0.8em;
+            font-weight:600;
+            cursor:pointer;
+            box-shadow:rgba(0,0,0,0.09) 0px 3px 12px;
+        }
+        .moveBtn{
+                position:absolute;
+                width:50%;
+                height:90%;
+                margin:2px;
+                border:none;
+                outline:none;
+                border-radius:50px;
+                background-color: #fff;
+                font-size:0.8em;
+                font-weight: 600;
+                cursor:pointer;
+                box-shadow:rgba(0,0,0,0.1)0px 4px 12px;
+                transform: translateX();
+                transition:all 0.2s ease-in-out;
+             }
+             .rightBtn{
+                transform: translateX(98%);
+                transition:all 0.2s ease-in-out;
+             }
+             .inputGroup{
+                 width:300px;
+                 margin: 0.8em 0;
+                 background-color: rgb(245,245,245);
+                 border-radius: 50px;
+                 box-shadow:rgba(0,0,0,0.12)0px 1px 3px,rgba(0,0,0,0.24)0px 1px 2px;
+                 font-weight:500;
+             }
+             .inputGroup input{
+                width:100%;
+                margin: 1em 1.5em;
+                background-color: transparent;
+                border:none;
+                border-radius: 50px;
+            }
+            .inputGroup input:focus{
+               outline:none;
+            }
+            .submitBtn{
+                width: 150px;
+                padding:1em;
+                margin:2em 0;
+                border-radius:50px;
+                border:none;
+                outline:none;
+                background-color: #fff;
+                box-shadow:rgba(0,0,0,0.12)0px 1px 3px,rgba(0,0,0,0.24)0px 1px 2px;
+                cursor:pointer;
+                font-size:0.8em;
+                font-weight:600;
+                transition:all 0.3s ease-in-out;
+            }
+            .submitBtn:hover{
+              background-color: royalblue;
+              color:#fff;
+              transition:all 0.3s ease-in-out;
+            }
+            .form{
+                display: none;
+            }
+            .signupForm{
+                display:block;
+            }
+            .loginForm{
+                display:block;
+            }
